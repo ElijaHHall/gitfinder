@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 
 class UserItem extends Component {
-	state = {
-		id: "id",
-		login: "mojombo",
-		avatar_url: "https://avatars0.githubusercontent.com/u/1?v=4",
-		html_url: "https://github.com/mojombo"
-	};
+	// add user schema to state with github api
 
 	render() {
-		const { login, avatar_url, html_url } = this.state;
+		//pull state variable from above and include as variables using this.state
+
+		const { login, avatar_url, html_url } = this.props.user;
 
 		return (
 			<div className='card text-center'>
